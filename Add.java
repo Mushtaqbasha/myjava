@@ -1,15 +1,16 @@
-import java.util.Scanner;
-public class Add
-{
-public static void main(String[] args)
-{
-int a,b,c;
-Scanner sc=new Scanner(System.in);
-a=Integer.parseInt(args[0]);
-System.out.println("number one is : "+a);
-b=Integer.parseInt(args[1]);
-System.out.println("number two is : "+b);
-c=a+b;
-System.out.println("Addition of two numbers is : "+c);
-}
-}
+import java.util.Scanner; // Import the Scanner class
+
+class MyClass {
+  public static void main(String[] args) {
+    int x, y, sum;
+    Scanner myObj = new Scanner(System.in); // Create a Scanner object
+    System.out.println("Type a number:");
+    x = myObj.nextInt(); // Read user input
+
+    System.out.println("Type another number:");
+    y = myObj.nextInt(); // Read user input
+
+    sum = x + y;  // Calculate the sum of x + y
+    System.out.println("Sum is: " + sum); // Print the sum
+  }
+} 
